@@ -1,0 +1,410 @@
+﻿
+span {
+    font-family: Arial;
+    font-size: 13px;
+}
+
+body {
+    background-color: #808080;
+    width:100%;
+    height:100%;
+}
+
+.normalLink {
+    /*font-family: Arial;
+    font-size: 13px;*/
+    color: #0072C6 !important;
+    text-decoration: underline !important;
+}
+
+/*Invoice Button CSS*/
+.SzamlaLabel {
+    position: absolute;
+    top: 61px;
+    left: 811px;
+    font-size:larger;
+}
+.BakcButton {
+    position: absolute;
+    top: 508px;
+    left: 552px;
+}
+.EditButton {
+    margin-left:6px;
+}
+.DeleteButton {
+    margin-left: 6px;
+}
+
+/*InvoiceDetailCSS------------*/
+.CompanyName {
+    border-style: hidden;
+    border-color: inherit;
+    border-width: medium;
+    position: absolute;
+    top: 17px;
+    left: 11px;
+    }
+.CompanyAddress {
+    border-style: hidden;
+    border-color: inherit;
+    border-width: medium;
+    position: absolute;
+    top: 50px;
+    left: 11px;
+    
+}
+.CompanyAccNum {
+    border-style: hidden;
+    border-color: inherit;
+    border-width: medium;
+    position: absolute;
+    top: 85px;
+    left: 11px;
+    }
+.CustomerName {
+    border-style: hidden;
+    border-color: inherit;
+    border-width: medium;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    }
+
+.CustromerAddress {
+    border-style: hidden;
+    border-color: inherit;
+    border-width: medium;
+    position: absolute;
+    top: 51px;
+    left: 15px;
+    
+}
+
+.CustomerAccNum {
+    border-style: hidden;
+    border-color: inherit;
+    border-width: medium;
+    position: absolute;
+    top: 85px;
+    left: 15px;
+    }
+.DueDateLabel {
+    position: absolute;
+    top: 302px;
+    left: 950px;
+   
+}
+.DueDateTextbox {
+    position: absolute;
+    top: 331px;
+    left: 949px;
+}
+.InvoiceDateLabel {
+    position: absolute;
+    top: 301px;
+    left: 767px;
+}
+.InvoiceDateTextBox {
+    position: absolute;
+    top: 331px;
+    left: 766px;
+    
+}
+.IvoiceNumberTextbox {
+    border-style: hidden;
+    border-color: inherit;
+    border-width: medium;
+
+    }
+.IvoiceNumberLabel{
+    position:absolute;
+    top: 238px;
+    left: 583px;
+}
+.DateOFLabel {
+    position: absolute;
+    top: 301px;
+    left: 584px;
+   
+}
+.DateOFTextbox {
+    position: absolute;
+    top: 331px;
+    left: 582px;
+}
+.NettoLabel{
+    position:absolute;
+    top: 517px;
+    left: 585px;
+}
+.NettoTextBox {
+    position: absolute;
+    top: 547px;
+    left: 584px;
+    
+}
+.TaxLabel{
+    position:absolute;
+    top: 518px;
+    left: 769px;
+    width: 18px;
+}
+.TaxTextBox {
+    position: absolute;
+    top: 547px;
+    left: 768px;
+}
+.BruttoLabel{
+    position:absolute;
+    top: 519px;
+    left: 954px;
+}
+.BruttoTextbox {
+    position:absolute;
+    top: 547px;
+    left: 950px;
+  
+}
+.InvoiceDetailGrid{
+    position:absolute;
+    top: 365px;
+    left: 786px;
+  
+}
+.WelcomeLabel{
+    position:absolute;
+    top: 99px;
+    left: 375px;
+}
+.WelcomeButton{
+    position:absolute;
+}
+.InvoiceLabel{
+   
+    font-size:20px;
+    padding-bottom:20px;
+}
+.CompanyBox {
+   border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    position:absolute;
+    width:200px;
+    height:120px;
+    top: 102px;
+    left: 584px;
+}
+.CustomerBox {
+    border-style: solid;
+    border-color: inherit;
+    border-width: 1px;
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    top: 104px;
+    left: 915px;
+}
+
+.SzamlaElrejtese{
+    position:absolute;
+    top: 661px;
+    left: 471px;
+}
+.rejtet{
+    display:none;
+}
+.cursorHand {
+    cursor: pointer;
+}
+
+.mainDiv {
+    padding: 0px;
+}
+
+.mainContentDiv {
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+    padding-bottom: 7px;
+    border: 1px dotted #C0C0C0;
+    text-align: left;
+    background-color: #FFFFFF;
+}
+
+.titleDiv {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #C0C0C0;
+    background-color: #F6F6F6;
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.footerDiv {
+    width: 100%;
+    position: fixed;
+    bottom: 0%;
+    font-size: medium;
+    padding: 2px;
+    height: 39px;
+    background-color: #3c8dbc;
+    color: black;
+}
+.footer {
+    padding: 7px 15px;
+    float: left;
+    height: 50px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-left: 340px
+}
+.box {
+ 
+}
+
+.filterList {
+    overflow: auto;
+    height: 300px;
+}
+
+.panelBackground {
+    background-color: #F6F6F6 !important;
+    background: #F6F6F6 !important;
+}
+
+.contentDiv {
+    /*margin-left: 10px; 
+    margin-top: 10px;*/
+    padding: 10px;
+}
+
+.divSearch {
+    border: 1px dotted #C0C0C0;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.titleText {
+    font-family: Arial;
+    font-size: 28px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.titleTextBlack {
+    font-family: Arial;
+    font-size: 28px;
+    color: black;
+    font-weight: normal;
+}
+
+.subtitleText {
+    font-family: Arial;
+    font-size: 17px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.smalltitleText {
+    font-family: Arial;
+    font-size: 10px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.panelBorderDotted {
+    border-top: 2px solid #C0C0C0;
+    margin-top: 2px;
+    margin-bottom: 12px;
+    border-top-style: dotted;
+    border-top-width: 1px;
+}
+
+.buttonsDivLeft {
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 4px;
+}
+
+.buttonsDivRight {
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 4px;
+}
+
+.buttonItemDivLeft {
+    display: inline-block;
+    display: inline;
+    margin-right: 5px;
+}
+
+.buttonItemDivRight {
+    display: inline-block;
+    display: inline;
+    margin-left: 5px;
+}
+
+.gridButtonLeft {
+    float: left;
+    padding-right: 6px;
+}
+
+.gridButtonRight {
+    float: right;
+    padding-left: 6px;
+}
+
+.gridButtonRightCombo {
+    float: right;
+    padding-left: 6px;
+    padding-top: 3px;
+}
+
+.gridButtonLeftCombo {
+    float: left;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+
+.divSearchItem {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+    margin-right: 15px;
+}
+
+.divSearchButtons {
+    margin-top: 5px;
+}
+
+.dataFormCol1 {
+    width: 150px;
+}
+
+.dataFormCol2 {
+    width: 500px;
+}
+
+.groupPanelText {
+    /*width: 655px;*/
+    width: 100%;
+    font-family: Arial;
+    font-size: 15px;
+    color: #666666;
+    font-weight: bold;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    border-bottom-color: #C0C0C0;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.inlineBlock {
+    display: inline-block;
+    display: inline;
+    zoom: 1;
+}
+.Main-Header{
+    background-color:green;
+
+}

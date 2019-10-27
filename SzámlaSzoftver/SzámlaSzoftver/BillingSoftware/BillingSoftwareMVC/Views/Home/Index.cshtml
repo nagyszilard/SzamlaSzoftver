@@ -1,0 +1,9 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div>
+    <a class="WelcomeLabel"> Üdvözöljük a számlázó programban</a>
+</div>
+<div>
+    <button type="button" class="btn btn-block btn-primary btn-lg" onclick="location.href='@Url.Action("Invoice","Home")'" >Számlák listája</button>
+</div>

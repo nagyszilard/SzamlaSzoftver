@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="BillingLINQ">
+  <DataContextMoniker Name="/BillingLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a69d84a8-5ac7-4431-83a8-acdaf5f564ee" absoluteBounds="4, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BillingLINQDataContext/Company" />
+      <nestedChildShapes>
+        <elementListCompartment Id="41d28355-224e-4258-aab2-e8b1ae1b0c60" absoluteBounds="4.015, 1.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2b9de46b-e1f1-496a-a627-aa18791cb487" absoluteBounds="5, 4.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BillingLINQDataContext/Customer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f252e65-65ba-411b-ab9d-07c480fddc20" absoluteBounds="5.015, 4.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7938d224-8d09-4e4f-8e4d-c00d385c7886" absoluteBounds="7.125, 2.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/BillingLINQDataContext/InvoiceDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b02402b-3b6b-493d-b04b-9799311560fd" absoluteBounds="7.14, 3.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e8858f74-84e5-4f49-9145-2db3c5ecd96d" absoluteBounds="2.75, 3, 2, 3.1170068359375">
+      <DataClassMoniker Name="/BillingLINQDataContext/Invoice" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45aa7fa9-66cf-4d3e-9674-00f708054c53" absoluteBounds="2.7649999999999997, 3.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.75 : 3.59375); (7.125 : 3.59375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BillingLINQDataContext/Invoice/Invoice_InvoiceDetail" />
+      <nodes>
+        <classShapeMoniker Id="e8858f74-84e5-4f49-9145-2db3c5ecd96d" />
+        <classShapeMoniker Id="7938d224-8d09-4e4f-8e4d-c00d385c7886" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
