@@ -48,6 +48,18 @@ body {
 .BtnDelete {
     margin-bottom: 15px;
 }
+.BtnNewItem {
+    margin-top: 4px;
+    margin-right: 6px;
+}
+.BtnModItem {
+    margin-top: 4px;
+    margin-right: 6px;
+}
+.BtnDeleteItem {
+    margin-top: 4px;
+    margin-right: 6px;
+}
 
 /*InvoiceDetailCSS------------*/
 .CompanyName {
@@ -157,6 +169,12 @@ body {
 
 .lbInvoice{
    
+}
+.lbInvoiceItem {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
 }
 .InvoiceDetailGrid{
     top: 365px;

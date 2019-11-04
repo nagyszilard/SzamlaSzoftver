@@ -12,14 +12,13 @@ namespace BillingSoftware.Pages
 {
     public partial class InvoiceDetail : System.Web.UI.Page
     {
-        static string prevPage = String.Empty;
-        
+     
         protected void Page_Load(object sender, EventArgs e)
         {
          
             if (!IsPostBack && !IsCallback)
             {
-                prevPage = Request.UrlReferrer.ToString();
+               
                 dsCustomer.DataBind();
                 
                 int? id = null;
@@ -32,16 +31,6 @@ namespace BillingSoftware.Pages
 
                     if (id != null)
                     {
-                        //using (var dc = new BillingLINQDataContext.DAL.DSSPlus.DSSPlusEntities())
-                        //{
-                        //    var item = dc.FIN_CurrencyTable.Single(it => it.id == id);
-
-                        //    dt_CurrDate.Value = item.CurrDate;
-                        //    cb_Currency.Value = item.Currency;
-                        //    cb_Bank.Text = item.Bank;
-                        //    se_Rate.Value = item.Rate;
-                        //}
-
                         BillingLINQDataContext kp = new BillingLINQDataContext();
 
                         var record = kp.Invoices.Where(a => a.InvoiceID == itmp).FirstOrDefault();
@@ -120,6 +109,8 @@ namespace BillingSoftware.Pages
                 invoice.DateOfCompletion = DateOfCompletion.Date;
                 invoice.DueDate = DueDate.Date;
                 invoice.CustomerID = (int)cbCustomer.Value;
+                invoice.CompanyID = (int)cbCompany.Value;
+                
                 kp.SubmitChanges();
             }
             else
@@ -130,8 +121,8 @@ namespace BillingSoftware.Pages
                 kp.Invoices.ToList().Add(item);
                 kp.SubmitChanges();
             }
-            Response.Redirect(prevPage);
 
+            Response.Redirect("~/Pages/Invoice.aspx?Id="+Session["InvoiceID"]);
         }
 
         protected void cbCustomer_SelectedIndexChanged(object sender, EventArgs e)
@@ -172,23 +163,20 @@ namespace BillingSoftware.Pages
 
         protected void BtnNew_Click(object sender, EventArgs e)
         {
-
-        }
-
-        protected void BtnModification_Click(object sender, EventArgs e)
-        {
-            BillingLINQDataContext kp = new BillingLINQDataContext();
-
             if (gwInvoiceDetail.FocusedRowIndex == -1) return;
 
             int id = (int)gwInvoiceDetail.GetRowValues(gwInvoiceDetail.FocusedRowIndex, "InvoiceID");
 
-            var invoice = kp.InvoiceDetails.Where(x => x.InvoiceID == (int)Session["InvoiceID"]).FirstOrDefault();
-            //invoice.ProductName = InvoiceDate.Date;
-            //invoice.DateOfCompletion = DateOfCompletion.Date;
-            //invoice.DueDate = DueDate.Date;
-            //invoice.CustomerID = (int)cbCustomer.Value;
-            kp.SubmitChanges();
+            Response.Redirect("~/Pages/InvoiceItem.aspx?mode=edit&InvoiceID=" + id);
+        }
+
+        protected void BtnModification_Click(object sender, EventArgs e)
+        {
+            if (gwInvoiceDetail.FocusedRowIndex == -1) return;
+
+            int id = (int)gwInvoiceDetail.GetRowValues(gwInvoiceDetail.FocusedRowIndex, "InvoiceID");
+
+            Response.Redirect("~/Pages/InvoiceItem.aspx?mode=edit&InvoiceID=" + id);
         }
     }
 }

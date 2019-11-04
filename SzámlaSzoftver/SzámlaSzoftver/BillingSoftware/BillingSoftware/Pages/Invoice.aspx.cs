@@ -16,7 +16,6 @@ namespace BillingSoftware.Pages
         {
             if (!IsPostBack && !IsCallback)
             {
-                int? id = null;
                 int itmp;
                 if (int.TryParse(Page.Request.QueryString["Id"], out itmp))
                 {
@@ -53,6 +52,7 @@ namespace BillingSoftware.Pages
             var delete = kp.Invoices.FirstOrDefault(s => s.InvoiceID == id);
             if (delete != null)
             {
+
                 kp.Invoices.DeleteOnSubmit(delete);
                 kp.SubmitChanges();
                
